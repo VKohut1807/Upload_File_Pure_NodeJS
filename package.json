@@ -1,0 +1,19 @@
+{
+  "name": "pure_node_upload_file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "upload",
+    "file"
+  ],
+  "author": "vasyl kohut",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5"
+  }
+}

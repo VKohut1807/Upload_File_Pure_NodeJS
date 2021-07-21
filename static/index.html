@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload_file</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <script src="./js/upload.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="filesLoaded">File was loaded before uploading:</header>
+        <div class="imgConteiner">
+            <img src="./images/logo.png" class="logo iconImage">
+        </div>
+        <form>
+            <div class="inputUploadBlock">
+                <input class="inputUpload" name="upload" type="file" accept=".jpg, .jpeg, .png">
+            </div>
+            <div class="names">
+                <input class="name" type="text" name="imageName" value="" placeholder="image name">
+                <input class="name" type="hidden" name="fileName" value="" placeholder="">
+                <input class="name" type="text" name="userName" value="" placeholder="user name">
+            </div>
+            <div>
+                <button class="sendButton">SEND</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

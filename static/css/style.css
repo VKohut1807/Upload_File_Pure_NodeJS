@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kalam', "cursive";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6990F2;
+}
+
+.wrapper {
+  width: 430px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper header {
+  color: #6990F2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper .imgConteiner {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: 10px;
+}
+
+.wrapper .imgConteiner .logo {
+  height: 100%;
+}
+
+.wrapper form {
+  display: flex;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990F2;
+}
+
+.wrapper .filesLoaded {
+  visibility: hidden;
+}
+
+form .inputUploadBlock {
+  border-radius: 10px;
+  background: #1950A3;
+  color: white;
+  margin-top: 20px;
+}
+
+form .inputUploadBlock .inputUpload {
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+form .names {
+  padding: 10px;
+  width: 100%;
+}
+
+form .name {
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin: 10px 0;
+}
+
+form .sendButton {
+  border-radius: 10px;
+  padding: 20px 30px;
+  background: #1950A3;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
