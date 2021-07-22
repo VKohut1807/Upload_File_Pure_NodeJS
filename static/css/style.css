@@ -14,6 +14,9 @@ body {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 430px;
   background: #fff;
   border-radius: 5px;
@@ -51,6 +54,43 @@ body {
 
 .wrapper .filesLoaded {
   visibility: hidden;
+}
+
+.wrapper table{
+  display: block;
+  max-width: 356px;
+  margin: 30px auto;
+  border: 1px solid black;
+  word-wrap: break-word;
+}
+
+.wrapper table tr{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.wrapper table th {
+  height: 70px;
+}
+
+.wrapper table th, td {
+  width: 87.5px;
+  border: 1px solid black;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapper table th:hover, td:hover {
+  white-space: normal;
+}
+
+.wrapper .navigation {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
 }
 
 form .inputUploadBlock {

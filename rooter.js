@@ -3,6 +3,8 @@ const app = require("./app");
 module.exports = function (req, res) {
     if (req.url === "/") {
         app.sendRes("index.html", "text/html", res);
+    } else if (req.url === "/images" && req.method === "GET") {
+        app.findAllDB(res);
     } else if (/\/uploads\/[^\/]+$/.test(req.url) && req.method === "POST") {
         console.log("upload files");
         app.saveUploadFile(req, res);

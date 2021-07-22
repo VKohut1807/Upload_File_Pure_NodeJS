@@ -80,3 +80,15 @@ exports.writeToDB = function writeToDB(data, res) {
             console.log(`error 404 ${err}`);
         })
 }
+
+exports.findAllDB = function findAllDB(res) {
+    Image.findAll()
+        .then(data => {
+            res.end(JSON.stringify(data));
+            console.log(`data: ${JSON.stringify(data)}`);
+        })
+        .catch(err => {
+            res.end("error");
+            console.log(`error 404 ${err}`);
+        })
+}
